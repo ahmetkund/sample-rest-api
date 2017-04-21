@@ -1,0 +1,17 @@
+{
+  "name": "sample_rest_api",
+  "version": "1.0.0",
+  "description": "This service aims to show someones how a sample rest api works",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "test": "export NODE_ENV=development && nodemon --exec npm start"
+  },
+  "author": "Ahmet Kunduracı",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "~1.12.0",
+    "debug": "~2.1.1",
+    "express": "~4.12.2",
+  }
+}

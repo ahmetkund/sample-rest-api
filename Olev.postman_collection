@@ -1,0 +1,82 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Olev",
+		"_postman_id": "f931018c-0031-94e6-21fb-b66211e72be7",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Driver",
+			"request": {
+				"url": "http://localhost:3000/create",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \n\t\"name\": \"Ulaş Kunduraci\",\n\t\"lat\": 38,\n\t\"lng\": 35\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Driver",
+			"request": {
+				"url": "http://localhost:3000/edit/58fa0de62e4f166f55f151d0",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \n\t\n\t\"name\": \"Ahmet Kunduracilar\",\n\t\"lat\": 41,\n\t\"lng\": 29\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Remove Driver",
+			"request": {
+				"url": "http://localhost:3000/remove/58fa0de62e4f166f55f151d0",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \n\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Near Drivers",
+			"request": {
+				"url": "http://localhost:3000/ride?lat=38&lng=34",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
